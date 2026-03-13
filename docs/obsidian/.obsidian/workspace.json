@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Main Block.canvas",
+                "file": "Дорожная карта проекта(Схема).canvas",
                 "viewState": {
-                  "x": 490,
-                  "y": 1122.3899371069183,
-                  "zoom": -2.5839539756602403
+                  "x": 865.8398953528908,
+                  "y": 655.1139702167322,
+                  "zoom": -0.9999999999999998
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Main Block"
+              "title": "Дорожная карта проекта(Схема)"
             }
           }
         ]
@@ -203,7 +203,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,9 +220,10 @@
   },
   "active": "d65d70eb2930f9c9",
   "lastOpenFiles": [
+    "Дорожная карта проекта.md",
+    "Main Block.canvas",
     "Main To Do.md",
     "2026-03-13.md",
-    "Дорожная карта проекта.md",
     "Добро Пожаловать!.md",
     "Архитектурный Документ Backend.md",
     "Untitled.base",
