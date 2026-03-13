@@ -1,24 +1,89 @@
-# Compiled class file
-*.class
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
 
-# Log file
+# =========================
+# IDE / Editors
+# =========================
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# =========================
+# Logs
+# =========================
 *.log
 
-# BlueJ files
-*.ctxt
+# =========================
+# Environment variables
+# =========================
+.env
+.env.local
+.env.*
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# =========================
+# Java / Spring Boot
+# =========================
+target/
+build/
+out/
 
-# Package Files #
+*.class
 *.jar
 *.war
-*.nar
 *.ear
-*.zip
-*.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Maven
+.mvn/
+mvnw.cmd
+mvnw
+
+# Gradle
+.gradle/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtual environments
+venv/
+.venv/
+env/
+
+# python packaging
+dist/
+build/
+*.egg-info/
+
+# =========================
+# Node / Frontend
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# build outputs
+dist/
+build/
+
+# =========================
+# Coverage / testing
+# =========================
+coverage/
+.coverage
+.pytest_cache/
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.swp
+*.swo
