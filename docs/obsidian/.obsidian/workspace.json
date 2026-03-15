@@ -15,9 +15,9 @@
               "state": {
                 "file": "Дорожная карта проекта(Схема).canvas",
                 "viewState": {
-                  "x": 865.8398953528908,
-                  "y": 469.1139702167323,
-                  "zoom": -0.9999999999999998
+                  "x": -370.4289598705843,
+                  "y": 124.61308709242482,
+                  "zoom": 0.6666666666666667
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -228,7 +228,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f7a25263b457771d",
+  "active": "d65d70eb2930f9c9",
   "lastOpenFiles": [
     "Дорожная карта проекта.md",
     "Main Block.canvas",
