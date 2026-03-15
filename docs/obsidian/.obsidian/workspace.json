@@ -16,7 +16,7 @@
                 "file": "Дорожная карта проекта(Схема).canvas",
                 "viewState": {
                   "x": 865.8398953528908,
-                  "y": 655.1139702167322,
+                  "y": 469.1139702167323,
                   "zoom": -0.9999999999999998
                 }
               },
@@ -184,12 +184,22 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
             "id": "ab9099c6bdf69ed1",
+            "type": "leaf",
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "github-copilot-chat-view"
+            }
+          },
+          {
+            "id": "f7a25263b457771d",
             "type": "leaf",
             "state": {
               "type": "github-copilot-chat-view",
@@ -199,7 +209,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -218,7 +228,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d65d70eb2930f9c9",
+  "active": "f7a25263b457771d",
   "lastOpenFiles": [
     "Дорожная карта проекта.md",
     "Main Block.canvas",
