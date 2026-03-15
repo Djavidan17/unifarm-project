@@ -15,9 +15,9 @@
               "state": {
                 "file": "Дорожная карта проекта(Схема).canvas",
                 "viewState": {
-                  "x": -370.4289598705843,
-                  "y": 124.61308709242482,
-                  "zoom": 0.6666666666666667
+                  "x": -141.67554887572922,
+                  "y": 286.7490291625429,
+                  "zoom": -0.6666666666666665
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -204,12 +204,22 @@
             "state": {
               "type": "github-copilot-chat-view",
               "state": {},
+              "icon": "lucide-ghost",
+              "title": "github-copilot-chat-view"
+            }
+          },
+          {
+            "id": "e1b26bdccffca4b2",
+            "type": "leaf",
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
               "icon": "bot-message-square",
               "title": "Copilot Chat"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
