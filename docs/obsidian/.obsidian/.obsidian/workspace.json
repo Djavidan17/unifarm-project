@@ -1,27 +1,20 @@
 {
   "main": {
-    "id": "aeca764289d37d26",
+    "id": "9ae183970866e50a",
     "type": "split",
     "children": [
       {
-        "id": "0b9353f53f193f2d",
+        "id": "d6988f9cbc01475a",
         "type": "tabs",
         "children": [
           {
-            "id": "3057192cd8b8d1ad",
+            "id": "7f0c1131d42c4133",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Дорожная карта проекта(Схема).canvas",
-                "viewState": {
-                  "x": 1304.8032608646658,
-                  "y": -1005.2775473502198,
-                  "zoom": -2.6666666666666665
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Дорожная карта проекта(Схема)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -30,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "4f9628aa7f5ff75f",
+    "id": "794a9372f2ab55dd",
     "type": "split",
     "children": [
       {
-        "id": "6bc1404191e103c8",
+        "id": "ed628677c7d90955",
         "type": "tabs",
         "children": [
           {
-            "id": "301c9cfd64194e4b",
+            "id": "bc382bf3d40afa28",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -51,7 +44,7 @@
             }
           },
           {
-            "id": "461befaf2f3f2501",
+            "id": "93ef9ef9c1310614",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -68,7 +61,7 @@
             }
           },
           {
-            "id": "5aff0037370ac7e9",
+            "id": "68681325b61ba36f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -84,20 +77,19 @@
     "width": 300
   },
   "right": {
-    "id": "e3b81be0c569d4aa",
+    "id": "4352842f24836e54",
     "type": "split",
     "children": [
       {
-        "id": "77e9eeea47b7b0ff",
+        "id": "7e77f7ab2edd15a4",
         "type": "tabs",
         "children": [
           {
-            "id": "01a06ec6ef862911",
+            "id": "bfbe47e9694b9fd6",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Дорожная карта проекта(Схема).canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Дорожная карта проекта(Схема)"
+              "title": "Обратные ссылки"
             }
           },
           {
-            "id": "b0ea387d4b2a5d6e",
+            "id": "b7bc2bbcc8f1712e",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Дорожная карта проекта(Схема).canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Дорожная карта проекта(Схема)"
+              "title": "Исходящие ссылки"
             }
           },
           {
-            "id": "bee7519d8d57168e",
+            "id": "fcbae801b7e4cef1",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -140,7 +131,7 @@
             }
           },
           {
-            "id": "6339cad74e76139d",
+            "id": "95123eb05207919f",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -154,32 +145,20 @@
             }
           },
           {
-            "id": "9b7d1af2274f825d",
+            "id": "83cbcdc0ea081831",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Дорожная карта проекта(Схема).canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Дорожная карта проекта(Схема)"
-            }
-          },
-          {
-            "id": "fa22e854ed1e1e06",
-            "type": "leaf",
-            "state": {
-              "type": "github-copilot-chat-view",
-              "state": {},
-              "icon": "bot-message-square",
-              "title": "Copilot Chat"
+              "title": "Структура"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
@@ -194,20 +173,11 @@
       "daily-notes:Сегодняшняя заметка": false,
       "templates:Вставить шаблон": false,
       "command-palette:Открыть палитру команд": false,
-      "bases:Создать новую базу": false,
-      "obsidian-git:Open Git source control": false
+      "bases:Создать новую базу": false
     }
   },
-  "active": "301c9cfd64194e4b",
+  "active": "7f0c1131d42c4133",
   "lastOpenFiles": [
-    "Pasted image 20260315201940.png",
-    "Pasted image 20260315201855.png",
-    "Pasted image 20260315201824.png",
-    "Main Block.canvas",
-    "Дорожная карта проекта(Схема).canvas",
-    "Main To Do.md",
-    "Дорожная карта проекта.md",
-    "Добро Пожаловать!.md",
-    "Архитектурный Документ Backend.md"
+    "plugins/obsidian-git/obsidian_askpass.sh"
   ]
 }

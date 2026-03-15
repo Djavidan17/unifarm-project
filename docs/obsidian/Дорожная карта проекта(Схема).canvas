@@ -24,9 +24,9 @@
 		{"id":"74b9a9b7b463d041","type":"text","text":"### Задача: Утверждение структуры API\n\nОписание:  \nСовместно определить формат взаимодействия frontend и backend.\n\nОбсуждаются:\n\n- основные endpoints\n    \n- структура JSON ответов\n    \n- обработка ошибок\n    \n- авторизация через токены\n    \n\nНазначен:  \n@Менеджер + @Frontend_2 + @Backend_1 + @Backend_2\n\nСтатус: Не активен","x":1400,"y":96,"width":640,"height":412,"color":"1"},
 		{"id":"8210687d274d9817","type":"text","text":"## Infrastructure\n\n### Задача: Настройка инфраструктуры разработки\n\nОписание:  \nОпределить способ запуска проекта на всех машинах разработчиков.\n\nОбсуждаются:\n\n- контейнеризация через Docker\n    \n- структура репозитория\n    \n- CI/CD\n    \n- базовый процесс деплоя\n    \n\nНазначен: @Djavidan Rafiyev + @Aykhan Bagirov  \nСтатус: Не активен","x":640,"y":577,"width":649,"height":487,"color":"1"},
 		{"id":"e3f0f918c712fcee","type":"text","text":"### Задача: Планирование серверной и сетевой архитектуры\n\nОписание:  \nОпределить базовую серверную инфраструктуру проекта:\n\n- сервер приложения\n    \n- reverse proxy\n    \n- HTTPS\n    \n- доступ к базе данных\n    \n- базовые меры безопасности\n    \n\nНазначен: @Менеджер + @Network_Security  \nСтатус: Не активен","x":1365,"y":577,"width":711,"height":399,"color":"1"},
-		{"id":"a9be246607b2affb","x":440,"y":-2840,"width":987,"height":1484,"type":"file","file":"Pasted image 20260315201824.png"},
-		{"id":"03f5ba6e2c1590b8","x":1487,"y":-2480,"width":1106,"height":1065,"type":"file","file":"Pasted image 20260315201855.png"},
-		{"id":"bd83e2f5e2d28e66","x":2640,"y":-2760,"width":1180,"height":1404,"type":"file","file":"Pasted image 20260315201940.png"}
+		{"id":"a9be246607b2affb","type":"file","file":"Pasted image 20260315201824.png","x":440,"y":-2840,"width":987,"height":1484},
+		{"id":"03f5ba6e2c1590b8","type":"file","file":"Pasted image 20260315201855.png","x":1487,"y":-2480,"width":1106,"height":1065},
+		{"id":"bd83e2f5e2d28e66","type":"file","file":"Pasted image 20260315201940.png","x":2640,"y":-2760,"width":1180,"height":1404}
 	],
 	"edges":[
 		{"id":"d5ca7ef602adadc6","fromNode":"8038658d71cf63d8","fromSide":"right","toNode":"4426f04608b7d3e5","toSide":"left"},
