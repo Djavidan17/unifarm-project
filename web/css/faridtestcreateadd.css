@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Playfair+Display:wght@900&display=swap');
+
+:root {
+    --agro-green: #2D6A4F;
+    --agro-deep: #1B4332;
+    --black: #000000;
+    --white: #ffffff;
+    --soft-border: #e0e0e0;
+}
+
+body {
+    background-color: #f8f9f8;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Фон с градиентами */
+.luxury-bg {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.blob { position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.15; }
+.b-1 { width: 500px; height: 500px; background: var(--agro-green); top: -100px; right: -50px; }
+.b-2 { width: 400px; height: 400px; background: #95D5B2; bottom: -100px; left: -50px; }
+
+/* Контейнер формы */
+.form-container {
+    width: 100%;
+    max-width: 800px;
+    background: var(--white);
+    border: 4px solid var(--black);
+    padding: 50px;
+    box-shadow: 20px 20px 0px rgba(27, 67, 79, 0.05);
+}
+
+.form-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--agro-green);
+    font-weight: 800;
+    display: block;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.form-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    margin-bottom: 10px;
+}
+
+.title-line {
+    width: 60px;
+    height: 6px;
+    background: var(--agro-green);
+    margin: 0 auto;
+}
+
+/* Секции ввода */
+.section-box {
+    margin-bottom: 30px;
+}
+
+.section-label {
+    display: block;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+input[type="text"], 
+input[type="number"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid var(--black);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--agro-green);
+    background-color: #f9fffb;
+}
+
+/* Загрузка фото */
+.upload-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--black);
+    height: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-card:hover {
+    background: #f0fdf4;
+    border-color: var(--agro-green);
+}
+
+.plus-large { font-size: 2.5rem; font-weight: 300; }
+.upload-text { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; }
+
+/* Цена */
+.price-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--black);
+}
+
+.price-input-wrapper input {
+    border: none;
+    flex-grow: 1;
+}
+
+.currency-label {
+    padding: 0 20px;
+    font-weight: 900;
+    background: var(--black);
+    color: var(--white);
+    height: 52px;
+    display: flex;
+    align-items: center;
+}
+
+/* Кнопка */
+.submit-premium-btn {
+    width: 100%;
+    padding: 22px;
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    font-weight: 900;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 20px;
+}
+
+.submit-premium-btn:hover {
+    background: var(--agro-green);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.preview-flex {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.img-preview {
+    width: 80px; height: 80px;
+    border: 1px solid var(--black);
+    object-fit: cover;
+}

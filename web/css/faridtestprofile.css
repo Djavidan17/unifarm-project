@@ -1,0 +1,321 @@
+/* AGROTRADE PREMIUM PROFILE SYSTEM v1.0
+   Style: Luxury Minimalist (Tap.az Inspired)
+   Description: Управление личным кабинетом, публикациями и настройками.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Playfair+Display:ital,wght@0,900;1,900&display=swap');
+
+:root {
+    --agro-green: #2D6A4F;
+    --agro-deep: #1B4332;
+    --black: #000000;
+    --white: #ffffff;
+    --bg-light: #F8F9FA;
+    --border-thin: 1px solid #e0e0e0;
+    --sh-bold: 12px 12px 0px rgba(0,0,0,0.05);
+    --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* 1. Base Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--black);
+    min-height: 100vh;
+}
+
+/* 2. Luxury Background */
+.luxury-bg {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: radial-gradient(circle at top right, #ffffff, #f1f3f1);
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.12;
+}
+
+.b-1 { width: 500px; height: 500px; background: var(--agro-green); top: -100px; right: -50px; }
+.b-2 { width: 400px; height: 400px; background: #95D5B2; bottom: -100px; left: -50px; }
+
+/* 3. Header Navigation */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: var(--white);
+    border-bottom: 3px solid var(--black);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--black);
+    letter-spacing: -1px;
+}
+
+.logo span { color: var(--agro-green); }
+
+.exit-link {
+    font-weight: 800;
+    color: #ff4d4d;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.exit-link:hover { opacity: 0.6; }
+
+/* 4. Back Navigation Strip */
+.back-navigation {
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+}
+
+.minimal-back {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 800;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    transition: var(--transition);
+}
+
+.minimal-back:hover {
+    color: var(--agro-green);
+    transform: translateX(-5px);
+}
+
+/* 5. Profile Layout */
+.profile-wrapper {
+    max-width: 1200px;
+    margin: 30px auto 80px;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+/* 6. User Sidebar (Card) */
+.user-card {
+    background: var(--white);
+    border: 3px solid var(--black);
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: var(--sh-bold);
+    position: sticky;
+    top: 130px;
+}
+
+.avatar-container {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 25px;
+    position: relative;
+    border: 3px solid var(--black);
+    border-radius: 50%;
+    padding: 5px;
+    background: var(--white);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #eee;
+}
+
+.avatar-edit-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: var(--agro-green);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--white);
+    cursor: pointer;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.avatar-edit-icon:hover { transform: scale(1.1); background: var(--black); }
+
+.user-name {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.reg-date {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.settings-btn {
+    display: block;
+    padding: 15px;
+    background: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.settings-btn:hover { background: var(--agro-green); }
+
+.contact-info-card {
+    margin-top: 20px;
+    background: #fdfdfd;
+    border: 2px solid #eee;
+    padding: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.info-row strong { color: var(--agro-green); }
+
+/* 7. Content Area & Tabs */
+.user-content {
+    background: var(--white);
+    border: 3px solid var(--black);
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-tabs {
+    display: flex;
+    gap: 40px;
+    padding: 0 40px;
+    border-bottom: 2px solid #eee;
+    background: #fafafa;
+}
+
+.tab-item {
+    background: none;
+    border: none;
+    padding: 25px 0;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #aaa;
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tab-item span {
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-left: 5px;
+}
+
+.tab-item.active {
+    color: var(--black);
+}
+
+.tab-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--agro-green);
+}
+
+/* 8. Grid & Empty States */
+.tab-content {
+    flex-grow: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-state {
+    text-align: center;
+    max-width: 400px;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    filter: grayscale(1);
+    opacity: 0.3;
+}
+
+.empty-state p {
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.add-shortcut {
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--agro-green);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 0;
+    transition: var(--transition);
+}
+
+.add-shortcut:hover {
+    background: var(--black);
+    transform: translateY(-3px);
+}
+
+/* 9. Responsive */
+@media (max-width: 900px) {
+    .profile-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .user-card {
+        position: static;
+    }
+    .top-nav {
+        padding: 20px;
+    }
+}

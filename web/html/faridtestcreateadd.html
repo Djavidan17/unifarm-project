@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать объявление | AgroTrade</title>
+    <link rel="stylesheet" href="/web/css/faridtestcreateadd.css">
+</head>
+<body>
+    <div class="luxury-bg">
+        <div class="blob b-1"></div>
+        <div class="blob b-2"></div>
+    </div>
+
+    <div class="form-container">
+        <header class="form-header">
+            <a href="/web/html/faridtestmain.html" class="back-link">← Назад</a>
+            <h1 class="form-title">новое объявление</h1>
+            <div class="title-line"></div>
+        </header>
+
+        <form action="/api/add-product" method="POST" enctype="multipart/form-data" id="adForm">
+            
+            <div class="section-box">
+                <label class="section-label">Фотографии</label>
+                <div class="upload-grid">
+                    <label class="upload-card" id="dropZone">
+                        <input type="file" name="product_images" accept="image/*" multiple hidden id="fileInput">
+                        <span class="plus-large">+</span>
+                        <span class="upload-text">Нажмите, чтобы добавить</span>
+                    </label>
+                    <div id="previewContainer" class="preview-flex"></div>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <label class="section-label" for="title">Название товара</label>
+                <input type="text" name="title" id="title" placeholder="Например: Свежая фермерская клубника" required>
+            </div>
+
+            <div class="section-box">
+                <label class="section-label" for="category">Категория</label>
+                <select name="category" id="category" required>
+                    <option value="" disabled selected>Выберите категорию</option>
+                    <option value="vegetables">Овощи</option>
+                    <option value="fruits">Фрукты</option>
+                    <option value="dairy">Молочные продукты</option>
+                </select>
+            </div>
+
+            <div class="section-box">
+                <label class="section-label" for="description">Описание</label>
+                <textarea name="description" id="description" rows="5" placeholder="Опишите ваш товар максимально подробно..." required></textarea>
+            </div>
+
+            <div class="section-box">
+                <label class="section-label" for="price">Цена (AZN)</label>
+                <div class="price-input-wrapper">
+                    <input type="number" name="price" id="price" placeholder="0.00" step="0.01" required>
+                    <span class="currency-label">AZN</span>
+                </div>
+            </div>
+
+            <div class="section-box">
+                <label class="section-label" for="location">Город / Регион</label>
+                <input type="text" name="location" id="location" placeholder="Например: Баку" required>
+            </div>
+
+            <button type="submit" class="submit-premium-btn">
+                <span>ОПУБЛИКОВАТЬ ОБЪЯВЛЕНИЕ</span>
+            </button>
+        </form>
+    </div>
+
+    <script src="/web/js/faridtestcreateadd.js"></script>
+</body>
+</html>

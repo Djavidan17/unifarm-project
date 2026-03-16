@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр объявления | AgroTrade</title>
+    <link rel="stylesheet" href="/web/css/faridtestproduct.css">
+</head>
+<body>
+    <div class="luxury-bg">
+        <div class="blob b-1"></div>
+        <div class="blob b-2"></div>
+    </div>
+
+<nav class="product-nav">
+    <div class="nav-container">
+        <a href="/web/html/faridtestmain.html" class="back-link">
+            <span class="arrow">←</span>
+            <span class="back-text">назад к поиску</span>
+        </a>
+        <div class="nav-divider"></div>
+    </div>
+</nav>
+
+    <main class="product-container">
+        <section class="product-main">
+            <div class="image-gallery">
+                <div class="main-image-box">
+                    <img id="dynamicMainImg" src="/web/images/placeholder.jpg" alt="Product Image">
+                </div>
+                <div class="thumbnails-row" id="imageThumbnails">
+                    <div class="thumb-stub"></div>
+                    <div class="thumb-stub"></div>
+                    <div class="thumb-stub"></div>
+                </div>
+            </div>
+
+            <div class="product-description">
+                <h2 class="section-label">Описание</h2>
+                <p id="productDesc">Здесь будет детальное описание товара, которое подтянется из базы данных...</p>
+            </div>
+        </section>
+
+        <aside class="product-sidebar">
+            <div class="price-card">
+                <div class="product-price"><span id="productPrice">00.00</span> AZN</div>
+                
+                <h1 id="productTitle" class="product-name">Название товара</h1>
+                
+                <div class="info-line">Город: <span id="productCity">Баку</span></div>
+                <div class="info-line">Обновлено: <span id="productDate">Сегодня</span></div>
+            </div>
+
+            <div class="seller-card">
+                <div class="seller-label">Продавец</div>
+                <div class="seller-name" id="sellerName">Agro Owner</div>
+                
+                <a href="tel:+9940000000" class="call-btn" id="sellerPhone">
+                    ПОКАЗАТЬ НОМЕР
+                </a>
+                
+                <button class="message-btn">НАПИСАТЬ</button>
+            </div>
+        </aside>
+    </main>
+
+    <script src="/web/js/faridtestproduct.js"></script>
+</body>
+</html>

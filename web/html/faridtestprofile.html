@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Профиль | Farmerr</title>
+    
+    <link rel="stylesheet" href="/web/css/faridtestprofile.css">
+</head>
+<body>
+    <div class="luxury-bg">
+        <div class="blob b-1"></div>
+        <div class="blob b-2"></div>
+    </div>
+
+    <nav class="top-nav">
+        <a href="/web/html/faridtestmain.html" class="logo">FARM<span>ERR</span></a>
+        <a href="/web/html/faridtestregistration.html" class="exit-link">Выйти</a>
+    </nav>
+
+    <div class="back-navigation">
+        <a href="/web/html/faridtestmain.html" class="minimal-back">
+            <span class="arrow">←</span> Все объявления
+        </a>
+    </div>
+
+    <main class="profile-wrapper">
+        <aside class="user-sidebar">
+            <div class="user-card">
+                <div class="avatar-container">
+                    <img src="https://via.placeholder.com/150" alt="Avatar" id="userAvatar" class="profile-img">
+                    <div class="avatar-edit-icon">✎</div>
+                </div>
+                
+                <h1 class="user-name">Agro User</h1>
+                <p class="reg-date">На сайте с <span id="userRegistrationDate">...</span></p>
+
+                <a href="javascript:void(0)" class="settings-btn">Перейти к настройкам профиля</a>
+            </div>
+
+            <div class="contact-info-card">
+                <div class="info-row">
+                    <span>Номер:</span>
+                    <strong>+994 50 000 00 00</strong>
+                </div>
+            </div>
+        </aside>
+
+        <section class="user-content">
+            <div class="profile-tabs">
+                <button class="tab-item active" data-tab="active">Опубликованные <span>(0)</span></button>
+                <button class="tab-item" data-tab="sold">Проданные <span>(0)</span></button>
+            </div>
+
+            <div class="tab-content" id="activeAds">
+                <div class="empty-state">
+                    <div class="empty-icon">📦</div>
+                    <p>У вас пока нет активных объявлений</p>
+                    <a href="/web/html/faridtestcreateadd.html" class="add-shortcut">+ Разместить новое</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/web/js/faridtestprofile.js"></script>
+</body>
+</html>

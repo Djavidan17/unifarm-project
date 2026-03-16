@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Playfair+Display:wght@900&display=swap');
+
+:root {
+    --agro-green: #2D6A4F;
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #f4f4f4;
+}
+
+body {
+    background-color: #fcfcfc;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Фон с блобами */
+.luxury-bg { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-1; overflow:hidden; }
+.blob { position:absolute; border-radius:50%; filter:blur(100px); opacity:0.1; }
+.b-1 { width:600px; height:600px; background:var(--agro-green); top:-200px; right:-100px; }
+.b-2 { width:400px; height:400px; background:#95D5B2; bottom:-100px; left:-50px; }
+
+.product-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 30px;
+}
+
+/* Галерея */
+.main-image-box {
+    background: var(--white);
+    border: 4px solid var(--black);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#dynamicMainImg { width: 100%; height: 100%; object-fit: cover; }
+
+.thumbnails-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.thumb-stub {
+    width: 100px; height: 70px;
+    border: 2px solid var(--black);
+    background: var(--gray);
+}
+
+/* Описание */
+.product-description {
+    margin-top: 40px;
+    background: var(--white);
+    padding: 30px;
+    border: 2px solid var(--black);
+}
+
+.section-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Сайдбар */
+.price-card {
+    background: var(--white);
+    border: 4px solid var(--black);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.info-line {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* Кнопки связи */
+.seller-card {
+    background: var(--black);
+    color: var(--white);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.seller-name {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.call-btn {
+    background: var(--agro-green);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.message-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 18px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.call-btn:hover { transform: scale(1.03); }
+
+/* Адаптивность */
+@media (max-width: 900px) {
+    .product-container { grid-template-columns: 1fr; }
+    .product-sidebar { position: static; }
+}
+/* Обновленная навигация */
+.product-nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto 20px;
+    padding: 0 20px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+    transition: var(--transition-smooth);
+    width: fit-content;
+}
+
+.back-text {
+    font-family: 'Playfair Display', serif; /* Тот самый приятный шрифт */
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    position: relative;
+    margin-left: 8px;
+}
+
+/* Элегантное подчеркивание при наведении */
+.back-text::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--agro-green);
+    transition: width 0.4s ease;
+}
+
+.arrow {
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+/* Эффект при наведении */
+.back-link:hover .back-text {
+    color: var(--agro-green);
+}
+
+.back-link:hover .back-text::after {
+    width: 100%;
+}
+
+.back-link:hover .arrow {
+    transform: translateX(-5px);
+    color: var(--agro-green);
+}
+
+.nav-divider {
+    width: 40px;
+    height: 2px;
+    background: var(--agro-mid);
+    opacity: 0.5;
+}

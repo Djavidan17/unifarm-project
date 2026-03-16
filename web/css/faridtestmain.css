@@ -1,0 +1,345 @@
+/* AGROTRADE LUXURY MAIN SYSTEM v3.0 */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Playfair+Display:wght@900&display=swap');
+
+:root {
+    --agro-deep: #1B4332;
+    --agro-mid: #2D6A4F;
+    --agro-light: #95D5B2;
+    --pure-black: #000000;
+    --soft-gray: #F0F2F5;
+    --white: #FFFFFF;
+    --transition-smooth: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* 1. Base & Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--soft-gray);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--pure-black);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* 2. Premium Background */
+.luxury-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #fdfdfd 0%, #ebf2ee 100%);
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.2;
+    animation: pulse 10s infinite alternate;
+}
+
+.b-1 { width: 600px; height: 600px; background: var(--agro-light); top: -200px; right: -100px; }
+.b-2 { width: 500px; height: 500px; background: var(--agro-mid); bottom: -150px; left: -150px; }
+.b-3 { width: 300px; height: 300px; background: #d8f3dc; top: 30%; left: 40%; }
+
+@keyframes pulse {
+    0% { transform: scale(1) translate(0, 0); }
+    100% { transform: scale(1.1) translate(20px, 40px); }
+}
+
+/* 3. Navigation Bar (Tap.az Style) */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(15px);
+    border-bottom: 3px solid var(--pure-black);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left { display: flex; align-items: center; gap: 30px; }
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    cursor: pointer;
+}
+
+.logo span { color: var(--agro-mid); }
+
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.burger-icon .line {
+    width: 32px;
+    height: 4px;
+    background: var(--pure-black);
+    border-radius: 10px;
+    transition: var(--transition-smooth);
+}
+
+/* 4. Search Bar Modernized */
+.nav-center { flex-grow: 1; display: flex; justify-content: center; padding: 0 60px; }
+
+.search-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    background: var(--white);
+    border: 3px solid var(--pure-black);
+    padding: 4px;
+    transition: var(--transition-smooth);
+}
+
+.search-wrapper:focus-within {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-color: var(--agro-mid);
+}
+
+#mainSearch {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.search-trigger {
+    background: var(--pure-black);
+    color: var(--white);
+    border: none;
+    padding: 0 30px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.search-trigger:hover { background: var(--agro-mid); }
+
+/* 5. Action Boxes */
+.nav-right { display: flex; gap: 15px; }
+
+.nav-link-box {
+    border: 3px solid var(--pure-black);
+    padding: 12px 24px;
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--pure-black);
+    background: transparent;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+}
+
+.nav-link-box:hover {
+    background: var(--pure-black);
+    color: var(--white);
+}
+
+.lang-box { background: var(--soft-gray); border-color: transparent; }
+
+/* 6. Sidebar Categories */
+.side-menu {
+    position: fixed;
+    top: 80px;
+    left: -320px;
+    width: 320px;
+    height: calc(100vh - 80px);
+    background: var(--white);
+    border-right: 4px solid var(--pure-black);
+    z-index: 999;
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.side-menu.active { transform: translateX(320px); }
+
+.side-inner { padding: 50px 35px; }
+
+.menu-label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--agro-mid);
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.cat-item-stub {
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.cat-item-stub span { font-weight: 700; font-size: 1.1rem; }
+
+.cat-item-stub:hover { padding-left: 10px; color: var(--agro-mid); }
+
+/* 7. Recommendations Section */
+.container {
+    max-width: 1400px;
+    margin: 120px auto 100px;
+    padding: 0 30px;
+}
+
+.feed-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.feed-title {
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #000;
+}
+
+.title-underline {
+    width: 80px;
+    height: 5px;
+    background: var(--agro-mid);
+    margin: 15px auto 0;
+}
+
+/* 8. Product Grid & Cards (Fine Detail) */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.item-card {
+    background: var(--white);
+    border: 1.5px solid var(--pure-black); /* Тонкая черная рамка */
+    padding: 12px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition-smooth);
+    position: relative;
+}
+
+.item-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 12px 12px 0px var(--agro-mid);
+    border-color: var(--agro-mid);
+}
+
+.item-img-placeholder {
+    width: 100%;
+    height: 220px;
+    background: #f8f8f8;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.img-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--agro-mid);
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    font-weight: 800;
+}
+
+.item-meta { flex-grow: 1; display: flex; flex-direction: column; gap: 10px; }
+
+.item-price-glow {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--pure-black);
+}
+
+.item-title-line {
+    width: 100%;
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.item-title-line.short { width: 60%; }
+
+.item-footer {
+    margin-top: auto;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #999;
+    text-transform: uppercase;
+}
+
+/* 9. Floating Action Button */
+.sticky-action {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1001;
+}
+
+.add-post-btn {
+    background: var(--pure-black);
+    color: var(--white);
+    border: none;
+    padding: 20px 45px;
+    font-size: 1.1rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    transition: var(--transition-smooth);
+}
+
+.add-post-btn:hover {
+    background: var(--agro-mid);
+    transform: scale(1.05) translateY(-5px);
+}
+
+.plus-icon { font-size: 1.5rem; }
+
+/* 10. Responsive */
+@media (max-width: 1024px) {
+    .nav-center { padding: 0 20px; }
+}
+
+@media (max-width: 768px) {
+    .nav-center { display: none; }
+    .products-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    .item-card { height: 350px; }
+}
