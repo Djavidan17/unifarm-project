@@ -1,0 +1,154 @@
+body {
+    background-color: #ffffbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Скрываем всё, что выходит за границы экрана */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Общий стиль для дуг */
+.arc {
+    position: absolute;
+    border: 5px solid #647D55;
+    /* Оливковый цвет */
+    opacity: 0.6;
+    pointer-events: none;
+    /* Чтобы дуги не мешали кликать по кнопкам */
+}
+
+/* Хаотичные настройки для каждого угла */
+
+/* Верхний левый угол */
+.arc-1 {
+    top: -10px;
+    left: -10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 0 0 100% 0;
+    /* Четверть круга */
+    border-top: none;
+    border-left: none;
+    transform: rotate(180deg);
+    /* Разворачиваем в угол */
+}
+
+/* Верхний правый угол - сделаем ее более вытянутой */
+.arc-2 {
+    top: -20px;
+    right: -10px;
+    width: 180px;
+    height: 80px;
+    border-radius: 0 0 0 100%;
+    border-top: none;
+    border-right: none;
+    border-width: 3px;
+    /* Тоньше для хаотичности */
+}
+
+/* Нижний левый угол - маленькая и жирная */
+.arc-3 {
+    bottom: 20px;
+    left: -30px;
+    width: 100px;
+    height: 150px;
+    border-radius: 0 100% 100% 0;
+    border-left: none;
+    border-width: 7px;
+}
+
+/* Нижний правый угол - широкая дуга */
+.arc-4 {
+    bottom: -10px;
+    right: -10px;
+    width: 140px;
+    height: 140px;
+    border-radius: 100% 0 0 0;
+    border-bottom: none;
+    border-right: none;
+}
+
+/* --- Стили формы (костяк) --- */
+
+.registration-container {
+    text-align: center;
+    width: 340px;
+    z-index: 10;
+}
+
+.label-text {
+    color: #13312C;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* ... (предыдущие стили для body и arc оставляем без изменений) ... */
+
+/* ... (стили дуг и body остаются прежними) ... */
+
+.input-wrapper {
+    display: flex;
+    align-items: stretch;
+    /* Растягивает элементы на всю высоту рамки */
+    border: 5px solid #13312C;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Чуть светлее для видимости */
+    padding: 0;
+    height: 60px;
+    /* Фиксируем высоту для стабильности */
+}
+
+.country-code {
+    display: flex;
+    align-items: center;
+    padding: 0 5px 0 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #13312C;
+    user-select: none;
+}
+
+#phone-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: #13312C;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    outline: none;
+    width: 100px;
+    /* Базовая ширина для предотвращения схлопывания */
+}
+
+.arrow-button {
+    background-color: transparent;
+    border: none;
+    border-left: 5px solid #13312C;
+    /* Та самая линия из наброска */
+    color: #13312C;
+    cursor: pointer;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.arrow-button:hover {
+    background-color: #13312C;
+    color: #DFBD75;
+}
+
+.arrow-button span {
+    font-size: 28px;
+    /* Увеличили стрелку */
+    line-height: 1;
+}
