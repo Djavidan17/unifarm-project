@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroTrade Premium | Вход</title>
-    <link rel="stylesheet" href="/web/css/faridtestregistration.css">
+    <title>AgroTrade | Вход</title>
+    <link rel="stylesheet" href="registration.css">
 </head>
 <body>
+    <div class="corner-gradient"></div>
 
-    <div class="bg-blur-circle"></div>
-    <div class="bg-blur-circle-2"></div>
-
-    <section class="auth-wrapper">
+    <main class="auth-wrapper">
         <header class="brand-header">
-            <span class="brand-subtitle">Organic Marketplace</span>
-            <h1 class="main-title">Phone number</h1>
+            <h1 class="main-title">phone number</h1>
         </header>
 
         <form id="registrationForm" class="input-portal">
@@ -23,22 +20,16 @@
                     type="tel" 
                     id="phoneInput" 
                     value="+994" 
+                    maxlength="13" 
                     spellcheck="false"
-                    autocomplete="off"
                 >
             </div>
             <button type="submit" class="premium-submit">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <span>→</span>
             </button>
         </form>
+    </main>
 
-        <footer class="auth-footer">
-            <p></p>
-        </footer>
-    </section>
-
-    <script src="/web/js/faridtestregistration.js"></script>
+    <script src="registration.js"></script>
 </body>
 </html>
