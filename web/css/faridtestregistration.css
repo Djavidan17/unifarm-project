@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Plus+Jakarta+Sans:wght@800&display=swap');
+
+:root {
+    --agro-green: #1B4332;
+}
+
+body {
+    background-color: #fdfdfd;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* 3. Легкий градиент в углу экрана */
+.corner-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    height: 40vw;
+    background: radial-gradient(circle, rgba(27, 67, 50, 0.08) 0%, rgba(255,255,255,0) 70%);
+    pointer-events: none;
+}
+
+.auth-wrapper {
+    text-align: center;
+    z-index: 10;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+/* Контейнер с черной рамкой */
+.input-portal {
+    display: flex;
+    background: #fff;
+    border: 5px solid #000;
+    border-radius: 20px;
+    padding: 8px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 4. Анимация при нажатии на место ввода */
+.input-portal:focus-within {
+    transform: scale(1.03); /* Эффект увеличения */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+input[type="tel"] {
+ 
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 10px 20px;
+    width: 280px;
+    letter-spacing: 1px;
+}
+
+
+.premium-submit {
+    width: 70px;
+    height: 70px;
+    background: #000;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.premium-submit:hover {
+    background: var(--agro-green);
+}
