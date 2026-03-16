@@ -55,7 +55,6 @@ body {
 }
 
 input[type="tel"] {
- 
     border: none;
     outline: none;
     font-size: 2rem;
@@ -64,7 +63,6 @@ input[type="tel"] {
     width: 280px;
     letter-spacing: 1px;
 }
-
 
 .premium-submit {
     width: 70px;
