@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.style.transition = "0.4s ease";
         
         setTimeout(() => {
-            window.location.href = 'main.html';
+            window.location.href = 'home.html';
         }, 400);
     });
 });
